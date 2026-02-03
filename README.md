@@ -6,7 +6,7 @@ This project demonstrates clean Java coding standards, REST API design, unit tes
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 A retailer offers a rewards program to its customers:
 
@@ -18,7 +18,7 @@ A retailer offers a rewards program to its customers:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Java 21**
 - **Spring Boot 3.2.5**
@@ -29,7 +29,7 @@ A retailer offers a rewards program to its customers:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ``` text
 rewards-service
 ├── src
@@ -68,7 +68,7 @@ rewards-service
 ```
 ---
 
-## 🚀 REST API
+## REST API
 
 ### Get Rewards for a Customer
 
@@ -95,7 +95,7 @@ GET http://localhost:8080/api/rewards/all
 }
 ```
 
-⚙️ Reward Calculation Logic
+## Reward Calculation Logic
 
 - Transactions are processed individually
 - Reward points are calculated per transaction
@@ -103,14 +103,14 @@ GET http://localhost:8080/api/rewards/all
 - No months are hard-coded
 - Negative or null transaction amounts throw a custom exception
 
-🧪 Testing
+## Testing
 
 - Unit tests for reward calculation logic
 - Controller tests using MockitoExtension
 - Negative scenarios covered
 - Global exception handling implemented
 
-▶️ Running the Application
+## Running the Application
 Prerequisites
 - Java 21
 - Maven 3.9+
@@ -118,8 +118,8 @@ Prerequisites
 Application will start at: http://localhost:8080
 
 
-⚠️ Error Handling
-- Custom exception InvalidTransactionException
+## Error Handling
+- Custom exception InvalidTransactionException and CustomerNotFoundException
 - Centralized exception handling using @RestControllerAdvice
 - Clean JSON error responses with appropriate HTTP status codes
 
